@@ -9,9 +9,6 @@ var argument = process.argv[2];
 var value = process.argv[3];
 var dataText = process.argv[4];
 
-
-
-
 // Twitter parameters
 var params = {
 //Using the screen name and the user name 
