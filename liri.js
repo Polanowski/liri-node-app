@@ -1,13 +1,14 @@
 console.log("Liri is working.");
 var request = require('request');
 var fs = require('fs');
-var spotify = require('spotify');
+var spotify = require('node-spotify-api');
 var twitter = require('twitter');
 var twitterKeys = require("./keys.js");
-var tweet = new twitterKeys();
+var tweet = new twitter(twitterKeys);
 var argument = process.argv[2];
 var value = process.argv[3];
 var dataText = process.argv[4];
+
 
 // Twitter parameters
 var params = {
