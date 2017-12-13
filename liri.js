@@ -32,7 +32,7 @@ if(argument === "my-tweets"){
 if(argument === "movie-this"){ 
     console.log(process.argv);
     var movieTitle = process.argv[3];
-    request("http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&r=json&tomatoes=true",function (error, response, body){
+    request("http://www.omdbapi.com/?apikey=trilogy" + movieTitle + "&y=&plot=short&apikey=trilogy",function (error, response, body){
         
         if(process.argv[3]){
         console.log(body);  
